@@ -1,6 +1,9 @@
 # python_celery
 
+In a `.venv`:
+
 ```text
+$ pip install -r requirements.txt
 $ sqlite3 db.sqlite3
 $ docker run -p 5672:5672 rabbitmq
 $ celery -A tasks worker --loglevel=info
